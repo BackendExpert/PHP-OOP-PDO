@@ -1,6 +1,6 @@
 <?php 
 
-spl_autoload_register("");
+spl_autoload_register("autoload");
 
 function autoload($className){
     $path = 'classes/';
