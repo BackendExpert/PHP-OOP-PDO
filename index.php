@@ -4,6 +4,6 @@
     // $sayhello = new db();
     // echo $sayhello->sayHello;
 
-    $users = new users();
-    print_r($users->getUsers());
+    // $users = new users();
+    // print_r($users->getUsers());
 ?>
