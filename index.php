@@ -67,7 +67,7 @@
                             <td><?= $users['id'] ?></td>
                             <td><?= $users['fname'] ?></td>
                             <td><?= $users['lname'] ?></td>
-                            <td><?= $users['address'] ?></td>
+                            <td><?= $users['address_user'] ?></td>
                             <td><?= $users['join_at'] ?></td>
                             <td><?= $users['update_at'] ?></td>
                             <td>

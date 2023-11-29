@@ -12,6 +12,11 @@ class users extends db{
     }
 
     public function addUser(){
-        $insert_user = "INSERT INTO user_tbl(fname, lname, address_user, join_at, update_at)"
+        $insert_user = "INSERT INTO user_tbl(fname, lname, address_user, join_at, update_at) VALUES (?, ?, ?, NOW, NOW)";
+        $insert_exc = $this->connect()->prepare($insert_user);
+        $insert_exc->execute([$fn, $ln, $address]);
+
+        header("location: {$_SERVER['HTTP_REFERER']}");
+        
     }
 }
