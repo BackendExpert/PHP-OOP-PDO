@@ -38,7 +38,7 @@
       </div>
       <div class="modal-footer">
             <input type="reset" value="Clear" class="btn btn-secondary">
-            <input type="submit" value="Add User" class="btn btn-success">
+            <input type="submit" value="Add User" class="btn btn-success" name="add_user">
         </form>
       </div>
     </div>
