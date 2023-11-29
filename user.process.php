@@ -8,5 +8,5 @@
         $ln = $_POST['user-ln'];
         $address = $_POST['user-address'];
 
-        $users->addUser();
+        $users->addUser($fn, $ln, $address);
     }
