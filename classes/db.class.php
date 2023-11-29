@@ -1,5 +1,8 @@
 <?php 
     class db{
-        public $sayHello = "I am Jehan";
+        private $host = "localhost";
+        private $user = 'root';
+        private $pass = '';
+        private $db_name = 'php_pdo_oop_crud';
     }
 ?>
