@@ -5,5 +5,5 @@
     // echo $sayhello->sayHello;
 
     $users = new users();
-    echo ($users->getUsers());
+    print_r($users->getUsers());
 ?>
