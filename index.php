@@ -28,7 +28,12 @@
                 </tr>
             </thead>
             <tbody>
-                
+                <?php $users = new users(); ?>
+                <?php if($users->getUsers()) : ?>
+
+                <?php else : ?>
+                    <p style="color:red;">Users Not Found..!</p>
+                <?php endif; ?>
             </tbody>
         </table>
     </div>
