@@ -70,7 +70,10 @@
                             <td><?= $users['address'] ?></td>
                             <td><?= $users['join_at'] ?></td>
                             <td><?= $users['update_at'] ?></td>
-                            <td>Action</td>
+                            <td>
+                                <a href=""><button class="btn btn-warning">Edit</button></a>
+                                <a href=""><button class="btn btn-danger">Delete</button></a>
+                            </td>
                         <?php endforeach;?>
                     <?php else : ?>
                         <p style="color:red;">Users Not Found..!</p>
