@@ -11,8 +11,8 @@ class users extends db{
         }
     }
 
-    public function addUser(){
-        $insert_user = "INSERT INTO user_tbl(fname, lname, address_user, join_at, update_at) VALUES (?, ?, ?, NOW, NOW)";
+    public function addUser($fn, $ln, $address){
+        $insert_user = "INSERT INTO user_tbl(fname, lname, address_user, join_at, update_at) VALUES (?, ?, ?)";
         $insert_exc = $this->connect()->prepare($insert_user);
         $insert_exc->execute([$fn, $ln, $address]);
 
