@@ -11,8 +11,12 @@
     
 ?>
 
+
+
+<div class="container">
+<br><br><br>
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Launch static backdrop modal
+    Add New User
 </button>
 
 <!-- Modal -->
@@ -20,21 +24,28 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Add New User</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <form action="" method="post">
+            <label for="fname">First Name : </label>
+            <input type="text" name="" id="" class="form-control"><br>
+            <label for="fname">Last Name : </label>
+            <input type="text" name="" id="" class="form-control"><br>
+            <label for="fname">Address : </label>
+            <textarea name="" id="" cols="10" rows="10" style='resize:none;' class="form-control"></textarea>        
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Understood</button>
+            <input type="reset" value="Clear" class="btn btn-secondary">
+            <input type="submit" value="Add User" class="btn btn-success">
+        </form>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container">
+<br><br><br>
     <div class="row">
         <table class="table">
             <thead>
