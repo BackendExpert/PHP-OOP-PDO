@@ -10,4 +10,8 @@ class users extends db{
             return $all_user_result;
         }
     }
+
+    public function addUser(){
+        echo "adding Users...!";
+    }
 }
