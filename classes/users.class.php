@@ -12,6 +12,6 @@ class users extends db{
     }
 
     public function addUser(){
-        echo "adding Users...!";
+        $insert_user = "INSERT INTO user_tbl(fname, lname, address_user, join_at, update_at)"
     }
 }
