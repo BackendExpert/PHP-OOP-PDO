@@ -4,5 +4,9 @@
     $users = new users();
 
     if(isset($_POST['add_user'])) {
-        print_r($_POST);
+        $fn = $_POST['fn'];
+        $ln = $_POST['ln'];
+        $address = $_POST['address'];
+
+        $users->addUser();
     }
