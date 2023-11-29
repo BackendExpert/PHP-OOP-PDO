@@ -28,7 +28,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="" method="post">
+        <form action="user.process.php" method="POST">
             <label for="fname">First Name : </label>
             <input type="text" name="" id="" class="form-control"><br>
             <label for="fname">Last Name : </label>
