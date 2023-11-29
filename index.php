@@ -30,7 +30,9 @@
             <tbody>
                 <?php $users = new users(); ?>
                 <?php if($users->getUsers()) : ?>
-
+                    <?php foreach($users->getUsers() as $users) : ?>
+                        
+                    <?php endforeach;?>
                 <?php else : ?>
                     <p style="color:red;">Users Not Found..!</p>
                 <?php endif; ?>
