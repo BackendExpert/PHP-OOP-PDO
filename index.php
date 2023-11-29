@@ -30,11 +30,11 @@
       <div class="modal-body">
         <form action="user.process.php" method="POST">
             <label for="fname">First Name : </label>
-            <input type="text" name="" id="" class="form-control"><br>
+            <input type="text" name="user-fn" id="" class="form-control"><br>
             <label for="fname">Last Name : </label>
-            <input type="text" name="" id="" class="form-control"><br>
+            <input type="text" name="user-ln" id="" class="form-control"><br>
             <label for="fname">Address : </label>
-            <textarea name="" id="" cols="10" rows="10" style='resize:none;' class="form-control"></textarea>        
+            <textarea name="user-address" id="" cols="10" rows="10" style='resize:none;' class="form-control"></textarea>        
       </div>
       <div class="modal-footer">
             <input type="reset" value="Clear" class="btn btn-secondary">
