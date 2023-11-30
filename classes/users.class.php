@@ -27,4 +27,11 @@ class users extends db{
         $result = $update_view_exc->fetch();
         return $result;
     }
+
+    public function updateUser($fn, $ln, $address, $id){
+        $data_update = "UPDATE user_tbl SET fname = ?, lname = ?, address_user = ? WHERE id = ?";
+        $data_update_exc = $this->connect()->prepare($data_update);
+        $data_update_exc->execute([$fn, $ln, $address, $id]);
+        
+    }
 }
