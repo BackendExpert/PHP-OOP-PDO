@@ -21,3 +21,7 @@
         $users->updateUser($update_fn, $update_ln, $update_address, $id);
         header("location: {$_SERVER['HTTP_ORIGIN']}/PHP-OOP-PDO");
     }
+
+    elseif($_GET['isDelete'] === 'true'){
+        echo "User Deleted";
+    }
