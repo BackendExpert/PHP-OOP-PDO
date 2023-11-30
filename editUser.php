@@ -14,7 +14,7 @@
         </div>
         <div class="card-body">
             <a href="index.php"><button class="btn btn-primary">Back</button></a><br><br>
-            <form action="user.process.php?send=update" method="POST">
+            <form action="user.process.php?id= <?= $user['id']?>" method="POST">
                 <label for="fn">User First Name : </label>
                 <input type="text" name="update-fn" id="" class="form-control" value="<?= $user['fname']?>"> <br>
                 <label for="ln">User Last Name : </label>
