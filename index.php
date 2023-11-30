@@ -71,8 +71,8 @@
                                 <td><?= $users['join_at'] ?></td>
                                 <td><?= $users['update_at'] ?></td>
                                 <td>
-                                    <a href=""><button class="btn btn-warning">Edit</button></a>
-                                    <a href=""><button class="btn btn-danger">Delete</button></a>
+                                    <a href="editUser.php?id=<?= $users['id'] ?>"><button class="btn btn-warning">Edit</button></a>
+                                    <a href="user.process.php?id=<?= $users['id']?>"><button class="btn btn-danger">Delete</button></a>
                                 </td>
                             </tr>
                         <?php endforeach;?>
