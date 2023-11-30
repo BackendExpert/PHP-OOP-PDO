@@ -24,4 +24,5 @@
 
     elseif($_GET['isDelete'] === 'true'){
         $users->deleteUser($_GET['id']);
+        header("location: {$_SERVER['HTTP_ORIGIN']}/PHP-OOP-PDO");
     }

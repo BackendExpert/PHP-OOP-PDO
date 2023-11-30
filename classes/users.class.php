@@ -32,4 +32,10 @@ class users extends db{
         $data_update_exc->execute([$fn, $ln, $address, $id]);
 
     }
+
+    public function deleteUser($id){
+        $delete_user = "DELETE FROM user_tbl WHERE id = ?";
+        $delete_user_exc = $this->connect()->prepare($delete_user);
+        $delete_user_exc->execute([$id]);
+    }
 }
