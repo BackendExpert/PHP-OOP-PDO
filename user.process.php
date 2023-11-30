@@ -23,5 +23,5 @@
     }
 
     elseif($_GET['isDelete'] === 'true'){
-        echo "User Deleted";
+        $users->deleteUser($_GET['id']);
     }
