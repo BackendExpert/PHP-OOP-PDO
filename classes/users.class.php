@@ -19,4 +19,12 @@ class users extends db{
         header("location: {$_SERVER['HTTP_REFERER']}");
         
     }
+
+    public function editUser($id){
+        $update_view = "SELECT * FROM user_tbl WHERE id = ?";
+        $update_view_exc = $this->connect()->prepare($update_view);
+        $update_view_exc->execute([$id]);
+        $result = $update_view_exc->fetch();
+        return $result;
+    }
 }

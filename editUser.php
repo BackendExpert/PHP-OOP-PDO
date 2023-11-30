@@ -3,7 +3,7 @@
     include("includes/class.autoload.inc.php");
 
     $users = new users();
-    $user = $users->editUser();
+    $user = $users->editUser($_GET['id']);
 ?>
 
 <br><br>
