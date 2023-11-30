@@ -9,6 +9,7 @@
         $address = $_POST['user-address'];
 
         $users->addUser($fn, $ln, $address);
+        header("location: {$_SERVER['HTTP_REFERER']}");
     }
 
     elseif(isset($_POST['update_user'])) {
@@ -18,4 +19,5 @@
         $update_address = $_POST['update-address'];
 
         $users->updateUser($update_fn, $update_ln, $update_address, $id);
+        header("location: {$_SERVER['HTTP_ORIGIN']}/PHP-OOP-PDO");
     }

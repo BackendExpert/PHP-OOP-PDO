@@ -15,8 +15,6 @@ class users extends db{
         $insert_user = "INSERT INTO user_tbl(fname, lname, address_user) VALUES (?, ?, ?)";
         $insert_exc = $this->connect()->prepare($insert_user);
         $insert_exc->execute([$fn, $ln, $address]);
-
-        header("location: {$_SERVER['HTTP_REFERER']}");
         
     }
 
@@ -32,6 +30,6 @@ class users extends db{
         $data_update = "UPDATE user_tbl SET fname = ?, lname = ?, address_user = ? WHERE id = ?";
         $data_update_exc = $this->connect()->prepare($data_update);
         $data_update_exc->execute([$fn, $ln, $address, $id]);
-                
+
     }
 }
