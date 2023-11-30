@@ -72,7 +72,7 @@
                                 <td><?= $users['update_at'] ?></td>
                                 <td>
                                     <a href="editUser.php?id=<?= $users['id'] ?>"><button class="btn btn-warning">Edit</button></a>
-                                    <a href="user.process.php?id=<?= $users['id']?>"><button class="btn btn-danger">Delete</button></a>
+                                    <a href="user.process.php?id=<?= $users['id']?>&delete=true"><button class="btn btn-danger">Delete</button></a>
                                 </td>
                             </tr>
                         <?php endforeach;?>
